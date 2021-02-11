@@ -1,15 +1,8 @@
 """
-import misc
-import identification
-import deconvolution
-import uncertainty
-
-# See http://mathmet.org/projects/14SIP08 and
-# https://www.github.com/eichstaedtPTB/PyDynamic
+See http://mathmet.org/projects/14SIP08 and
+https://github.com/PTB-PSt1/PyDynamic/
 """
 
-from .deconvolution.fit_filter import LSFIR_unc, LSFIR_uncMC, LSIIR_unc
-from .identification.fit_transfer import fit_sos
 
 from .misc import *
 from .model_estimation import *
@@ -25,11 +18,7 @@ __all__ = [
     "invLSIIR_unc",
     "LSFIR",
     "LSIIR",
-    "LSFIR_unc",
-    "LSFIR_uncMC",
-    "LSIIR_unc",
     "fit_som",
-    "fit_sos",
     "FreqResp2RealImag",
     "GUM_DFT",
     "GUM_iDFT",
@@ -39,8 +28,16 @@ __all__ = [
     "AmpPhase2DFT",
     "AmpPhase2Time",
     "Time2AmpPhase",
+    "dwt",
+    "wave_dec",
+    "wave_dec_realtime",
+    "inv_dwt",
+    "wave_rec",
+    "filter_design",
+    "dwt_max_level",
     "FIRuncFilter",
     "IIRuncFilter",
+    "IIR_get_initial_state",
     "MC",
     "SMC",
     "UMC",
@@ -63,6 +60,7 @@ __all__ = [
     "rect",
     "corr_noise",
     "sine",
+    "multi_sine",
     "ARMA",
     "print_vec",
     "print_mat",
